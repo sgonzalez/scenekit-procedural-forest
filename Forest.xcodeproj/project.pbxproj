@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E751ED72269302C009E5A87 /* SCNVector3+LinearAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751ED22269302B009E5A87 /* SCNVector3+LinearAlgebra.swift */; };
+		7E751ED82269302C009E5A87 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751ED32269302B009E5A87 /* GameViewController.swift */; };
+		7E751ED92269302C009E5A87 /* PerlinNoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751ED42269302B009E5A87 /* PerlinNoise.swift */; };
+		7E751EDB2269302C009E5A87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751ED62269302C009E5A87 /* Utilities.swift */; };
+		7E751EDF22694A8A009E5A87 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7E751EDD22694A89009E5A87 /* LICENSE */; };
+		7E751EE022694A8A009E5A87 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E751EDE22694A89009E5A87 /* README.md */; };
+		7E94A7342242FE2B00CB6AA2 /* TerrainPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */; };
+		7EAA76381CBB2CE500DFF0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */; };
+		7EAA76401CBB2CE600DFF0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */; };
+		7EAA76431CBB2CE600DFF0D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA76411CBB2CE600DFF0D2 /* MainMenu.xib */; };
+		7EAA76691CBB346A00DFF0D2 /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76681CBB346A00DFF0D2 /* Terrain.swift */; };
+		7EAA76711CC2D22200DFF0D2 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76701CC2D22200DFF0D2 /* Tree.swift */; };
+		7EAA76741CC2D23E00DFF0D2 /* TriangleStripGeometryGeneratable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76731CC2D23E00DFF0D2 /* TriangleStripGeometryGeneratable.swift */; };
+		7EAA76771CC2D36300DFF0D2 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76761CC2D36300DFF0D2 /* TreeNode.swift */; };
+		7EAA76791CC2DACB00DFF0D2 /* RawGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76781CC2DACB00DFF0D2 /* RawGeometry.swift */; };
+		7EAA767B1CC2E70F00DFF0D2 /* GeometryGeneratable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA767A1CC2E70F00DFF0D2 /* GeometryGeneratable.swift */; };
+		7EAA767D1CC3038700DFF0D2 /* TriangleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA767C1CC3038700DFF0D2 /* TriangleGenerator.swift */; };
+		7EAA767F1CC3049A00DFF0D2 /* TrianglesGeometryGeneratable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA767E1CC3049A00DFF0D2 /* TrianglesGeometryGeneratable.swift */; };
+		7EAA76811CC360C600DFF0D2 /* SkyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76801CC360C600DFF0D2 /* SkyGenerator.swift */; };
+		7EAA76851CD5E1DA00DFF0D2 /* LeafModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76841CD5E1DA00DFF0D2 /* LeafModel.swift */; };
+		7EAA76871CD5E1FF00DFF0D2 /* ClusterLeafModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76861CD5E1FF00DFF0D2 /* ClusterLeafModel.swift */; };
+		7EAA76891CD5E3B300DFF0D2 /* Detailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76881CD5E3B300DFF0D2 /* Detailable.swift */; };
+		7EAA768B1CD5E56800DFF0D2 /* NeedleSkirtLeafModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA768A1CD5E56800DFF0D2 /* NeedleSkirtLeafModel.swift */; };
+		7EEA39A6224586CE009CA534 /* Grass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEA39A5224586CE009CA534 /* Grass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E751ED22269302B009E5A87 /* SCNVector3+LinearAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SCNVector3+LinearAlgebra.swift"; path = "../../WWDC19.playground/Sources/SCNVector3+LinearAlgebra.swift"; sourceTree = "<group>"; };
+		7E751ED32269302B009E5A87 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../../WWDC19.playground/Sources/GameViewController.swift; sourceTree = "<group>"; };
+		7E751ED42269302B009E5A87 /* PerlinNoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerlinNoise.swift; path = ../../WWDC19.playground/Sources/PerlinNoise.swift; sourceTree = "<group>"; };
+		7E751ED62269302C009E5A87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ../../WWDC19.playground/Sources/Utilities.swift; sourceTree = "<group>"; };
+		7E751EDD22694A89009E5A87 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7E751EDE22694A89009E5A87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TerrainPalette.png; path = "../../../../Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents/WWDC19 Santiago Gonzalez.playground/Resources/TerrainPalette.png"; sourceTree = "<group>"; };
+		7EAA76341CBB2CE500DFF0D2 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EAA76421CBB2CE600DFF0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7EAA76441CBB2CE600DFF0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA76681CBB346A00DFF0D2 /* Terrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
+		7EAA76701CC2D22200DFF0D2 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		7EAA76731CC2D23E00DFF0D2 /* TriangleStripGeometryGeneratable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleStripGeometryGeneratable.swift; sourceTree = "<group>"; };
+		7EAA76761CC2D36300DFF0D2 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		7EAA76781CC2DACB00DFF0D2 /* RawGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawGeometry.swift; sourceTree = "<group>"; };
+		7EAA767A1CC2E70F00DFF0D2 /* GeometryGeneratable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryGeneratable.swift; sourceTree = "<group>"; };
+		7EAA767C1CC3038700DFF0D2 /* TriangleGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleGenerator.swift; sourceTree = "<group>"; };
+		7EAA767E1CC3049A00DFF0D2 /* TrianglesGeometryGeneratable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrianglesGeometryGeneratable.swift; sourceTree = "<group>"; };
+		7EAA76801CC360C600DFF0D2 /* SkyGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyGenerator.swift; sourceTree = "<group>"; };
+		7EAA76841CD5E1DA00DFF0D2 /* LeafModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeafModel.swift; sourceTree = "<group>"; };
+		7EAA76861CD5E1FF00DFF0D2 /* ClusterLeafModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterLeafModel.swift; sourceTree = "<group>"; };
+		7EAA76881CD5E3B300DFF0D2 /* Detailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detailable.swift; sourceTree = "<group>"; };
+		7EAA768A1CD5E56800DFF0D2 /* NeedleSkirtLeafModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleSkirtLeafModel.swift; sourceTree = "<group>"; };
+		7EEA39A5224586CE009CA534 /* Grass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grass.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EAA76311CBB2CE500DFF0D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E751EDC226933D3009E5A87 /* Concrete Leaves */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA76861CD5E1FF00DFF0D2 /* ClusterLeafModel.swift */,
+				7EAA768A1CD5E56800DFF0D2 /* NeedleSkirtLeafModel.swift */,
+			);
+			name = "Concrete Leaves";
+			sourceTree = "<group>";
+		};
+		7E751EE122695DCB009E5A87 /* Reference GeometryGeneratable Types */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA76731CC2D23E00DFF0D2 /* TriangleStripGeometryGeneratable.swift */,
+				7EAA767E1CC3049A00DFF0D2 /* TrianglesGeometryGeneratable.swift */,
+			);
+			name = "Reference GeometryGeneratable Types";
+			sourceTree = "<group>";
+		};
+		7EAA762B1CBB2CE500DFF0D2 = {
+			isa = PBXGroup;
+			children = (
+				7E751EDE22694A89009E5A87 /* README.md */,
+				7E751EDD22694A89009E5A87 /* LICENSE */,
+				7EAA76361CBB2CE500DFF0D2 /* Forest */,
+				7EAA76351CBB2CE500DFF0D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EAA76351CBB2CE500DFF0D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA76341CBB2CE500DFF0D2 /* Forest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EAA76361CBB2CE500DFF0D2 /* Forest */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */,
+				7E751ED32269302B009E5A87 /* GameViewController.swift */,
+				7E751ED42269302B009E5A87 /* PerlinNoise.swift */,
+				7E751ED22269302B009E5A87 /* SCNVector3+LinearAlgebra.swift */,
+				7E751ED62269302C009E5A87 /* Utilities.swift */,
+				7EAA76751CC2D2BA00DFF0D2 /* Procedural Structures */,
+				7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */,
+				7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */,
+				7EAA76411CBB2CE600DFF0D2 /* MainMenu.xib */,
+				7EAA76441CBB2CE600DFF0D2 /* Info.plist */,
+			);
+			path = Forest;
+			sourceTree = "<group>";
+		};
+		7EAA76721CC2D22400DFF0D2 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA76841CD5E1DA00DFF0D2 /* LeafModel.swift */,
+				7EAA76701CC2D22200DFF0D2 /* Tree.swift */,
+				7EAA76761CC2D36300DFF0D2 /* TreeNode.swift */,
+				7E751EDC226933D3009E5A87 /* Concrete Leaves */,
+			);
+			name = Trees;
+			sourceTree = "<group>";
+		};
+		7EAA76751CC2D2BA00DFF0D2 /* Procedural Structures */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA76781CC2DACB00DFF0D2 /* RawGeometry.swift */,
+				7EAA76801CC360C600DFF0D2 /* SkyGenerator.swift */,
+				7EAA76681CBB346A00DFF0D2 /* Terrain.swift */,
+				7EEA39A5224586CE009CA534 /* Grass.swift */,
+				7EAA76721CC2D22400DFF0D2 /* Trees */,
+				7EAA767A1CC2E70F00DFF0D2 /* GeometryGeneratable.swift */,
+				7EAA767C1CC3038700DFF0D2 /* TriangleGenerator.swift */,
+				7EAA76881CD5E3B300DFF0D2 /* Detailable.swift */,
+				7E751EE122695DCB009E5A87 /* Reference GeometryGeneratable Types */,
+			);
+			name = "Procedural Structures";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EAA76331CBB2CE500DFF0D2 /* Forest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAA765D1CBB2CE600DFF0D2 /* Build configuration list for PBXNativeTarget "Forest" */;
+			buildPhases = (
+				7EAA76301CBB2CE500DFF0D2 /* Sources */,
+				7EAA76311CBB2CE500DFF0D2 /* Frameworks */,
+				7EAA76321CBB2CE500DFF0D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Forest;
+			productName = Forest;
+			productReference = 7EAA76341CBB2CE500DFF0D2 /* Forest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EAA762C1CBB2CE500DFF0D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = MapleBit;
+				TargetAttributes = {
+					7EAA76331CBB2CE500DFF0D2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 28CKN66NP3;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 7EAA762F1CBB2CE500DFF0D2 /* Build configuration list for PBXProject "Forest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EAA762B1CBB2CE500DFF0D2;
+			productRefGroup = 7EAA76351CBB2CE500DFF0D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EAA76331CBB2CE500DFF0D2 /* Forest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EAA76321CBB2CE500DFF0D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E751EE022694A8A009E5A87 /* README.md in Resources */,
+				7EAA76401CBB2CE600DFF0D2 /* Assets.xcassets in Resources */,
+				7EAA76431CBB2CE600DFF0D2 /* MainMenu.xib in Resources */,
+				7E94A7342242FE2B00CB6AA2 /* TerrainPalette.png in Resources */,
+				7E751EDF22694A8A009E5A87 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EAA76301CBB2CE500DFF0D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAA767D1CC3038700DFF0D2 /* TriangleGenerator.swift in Sources */,
+				7EAA76811CC360C600DFF0D2 /* SkyGenerator.swift in Sources */,
+				7EAA76891CD5E3B300DFF0D2 /* Detailable.swift in Sources */,
+				7EAA76851CD5E1DA00DFF0D2 /* LeafModel.swift in Sources */,
+				7EAA768B1CD5E56800DFF0D2 /* NeedleSkirtLeafModel.swift in Sources */,
+				7EAA767F1CC3049A00DFF0D2 /* TrianglesGeometryGeneratable.swift in Sources */,
+				7EAA76771CC2D36300DFF0D2 /* TreeNode.swift in Sources */,
+				7E751ED72269302C009E5A87 /* SCNVector3+LinearAlgebra.swift in Sources */,
+				7EAA76741CC2D23E00DFF0D2 /* TriangleStripGeometryGeneratable.swift in Sources */,
+				7EAA76791CC2DACB00DFF0D2 /* RawGeometry.swift in Sources */,
+				7E751ED92269302C009E5A87 /* PerlinNoise.swift in Sources */,
+				7EAA767B1CC2E70F00DFF0D2 /* GeometryGeneratable.swift in Sources */,
+				7EEA39A6224586CE009CA534 /* Grass.swift in Sources */,
+				7EAA76871CD5E1FF00DFF0D2 /* ClusterLeafModel.swift in Sources */,
+				7EAA76691CBB346A00DFF0D2 /* Terrain.swift in Sources */,
+				7EAA76711CC2D22200DFF0D2 /* Tree.swift in Sources */,
+				7E751ED82269302C009E5A87 /* GameViewController.swift in Sources */,
+				7E751EDB2269302C009E5A87 /* Utilities.swift in Sources */,
+				7EAA76381CBB2CE500DFF0D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EAA76411CBB2CE600DFF0D2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EAA76421CBB2CE600DFF0D2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EAA765B1CBB2CE600DFF0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7EAA765C1CBB2CE600DFF0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		7EAA765E1CBB2CE600DFF0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 28CKN66NP3;
+				INFOPLIST_FILE = Forest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maplebit.Forest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7EAA765F1CBB2CE600DFF0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Forest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maplebit.Forest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EAA762F1CBB2CE500DFF0D2 /* Build configuration list for PBXProject "Forest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAA765B1CBB2CE600DFF0D2 /* Debug */,
+				7EAA765C1CBB2CE600DFF0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAA765D1CBB2CE600DFF0D2 /* Build configuration list for PBXNativeTarget "Forest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAA765E1CBB2CE600DFF0D2 /* Debug */,
+				7EAA765F1CBB2CE600DFF0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EAA762C1CBB2CE500DFF0D2 /* Project object */;
+}
