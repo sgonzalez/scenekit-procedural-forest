@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E751ED82269302C009E5A87 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751ED32269302B009E5A87 /* GameViewController.swift */; };
 		7E751EDF22694A8A009E5A87 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7E751EDD22694A89009E5A87 /* LICENSE */; };
 		7E751EE022694A8A009E5A87 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E751EDE22694A89009E5A87 /* README.md */; };
 		7E751EE3226BADA0009E5A87 /* PerlinNoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EE2226BADA0009E5A87 /* PerlinNoise.swift */; };
 		7E751EE7226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EE6226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift */; };
 		7E751EED226CD8FF009E5A87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EEC226CD8FF009E5A87 /* Utilities.swift */; };
+		7E751EF1226CDD9E009E5A87 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EF0226CDD9D009E5A87 /* GameViewController.swift */; };
 		7E94A7342242FE2B00CB6AA2 /* TerrainPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */; };
 		7EAA76381CBB2CE500DFF0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */; };
 		7EAA76401CBB2CE600DFF0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */; };
@@ -34,12 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E751ED32269302B009E5A87 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../../WWDC19.playground/Sources/GameViewController.swift; sourceTree = "<group>"; };
 		7E751EDD22694A89009E5A87 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7E751EDE22694A89009E5A87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7E751EE2226BADA0009E5A87 /* PerlinNoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerlinNoise.swift; sourceTree = "<group>"; };
 		7E751EE6226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+LinearAlgebra.swift"; sourceTree = "<group>"; };
 		7E751EEC226CD8FF009E5A87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7E751EF0226CDD9D009E5A87 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TerrainPalette.png; path = "../../../../Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents/WWDC19 Santiago Gonzalez.playground/Resources/TerrainPalette.png"; sourceTree = "<group>"; };
 		7EAA76341CBB2CE500DFF0D2 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */,
-				7E751ED32269302B009E5A87 /* GameViewController.swift */,
+				7E751EF0226CDD9D009E5A87 /* GameViewController.swift */,
 				7E751EE2226BADA0009E5A87 /* PerlinNoise.swift */,
 				7E751EE6226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift */,
 				7E751EEC226CD8FF009E5A87 /* Utilities.swift */,
@@ -228,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E751EF1226CDD9E009E5A87 /* GameViewController.swift in Sources */,
 				7EAA767D1CC3038700DFF0D2 /* TriangleGenerator.swift in Sources */,
 				7EAA76811CC360C600DFF0D2 /* SkyGenerator.swift in Sources */,
 				7EAA76891CD5E3B300DFF0D2 /* Detailable.swift in Sources */,
@@ -244,7 +245,6 @@
 				7E751EED226CD8FF009E5A87 /* Utilities.swift in Sources */,
 				7EAA76691CBB346A00DFF0D2 /* Terrain.swift in Sources */,
 				7EAA76711CC2D22200DFF0D2 /* Tree.swift in Sources */,
-				7E751ED82269302C009E5A87 /* GameViewController.swift in Sources */,
 				7EAA76381CBB2CE500DFF0D2 /* AppDelegate.swift in Sources */,
 				7E751EE7226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift in Sources */,
 			);

@@ -1,17 +1,26 @@
 //
 //  GameViewController.swift
-//  Forest
+//  Procedural Forest
 //
-//  Created by Santiago Gonzalez.
 //  Copyright © 2019 Santiago Gonzalez. All rights reserved.
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+//  GNU General Public License for more details.
 //
 
 import SceneKit
 import QuartzCore
 
-class GameViewController: NSViewController {
-    
-    @IBOutlet weak var gameView: GameView!
+public class GameViewController: NSViewController {
+	
+	@IBOutlet public var gameView: SCNView!
 	
 	var scene: SCNScene!
 	
@@ -20,8 +29,13 @@ class GameViewController: NSViewController {
 	let terrainScale: Float = 1
 	let waterHeight: CGFloat = 3.1
 	
-    override func awakeFromNib(){
-        super.awakeFromNib()
+	public override func awakeFromNib() {
+		super.awakeFromNib()
+		setup()
+	}
+	
+	/// Configures the scene.
+    public func setup() {
         
         // Create a new scene.
         scene = SCNScene()
@@ -68,38 +82,40 @@ class GameViewController: NSViewController {
 		setupInterfaceElements()
     }
 	
-	
+	// Hard-coded UI.
 	var regenButton: NSButton!
 	var titleLabel: NSTextField!
 	var subtitleLabel: NSTextField!
 	var bodyLabel: NSTextField!
 	
-	// Builds the controller's UI.
+	/// Builds the controller's UI.
 	func setupInterfaceElements() {
 		// Regenerate button.
 		regenButton = NSButton(title: "Generate New World", target: self, action: #selector(regen(_:)))
-		view.addSubview(regenButton)
+		gameView.addSubview(regenButton)
 		regenButton.frame = CGRect(x: 20, y: 60, width: regenButton.bounds.width, height: regenButton.bounds.height)
 		
 		// Create labels.
 		titleLabel = NSTextField(labelWithString: "Procedural World Generation")
-		subtitleLabel = NSTextField(labelWithString: "Santiago Gonzalez's WWDC'19 Scholarship Submission")
+		subtitleLabel = NSTextField(labelWithString: "by Santiago Gonzalez")
 		bodyLabel = NSTextField(labelWithString: "Generate random terrain from scratch, starting from triangles.\n\nUse two-fingers on your trackpad to move and zoom. Click and drag to rotate.")
 		titleLabel.font = NSFont.boldSystemFont(ofSize: 22)
 		subtitleLabel.font = NSFont.boldSystemFont(ofSize: 16)
 		bodyLabel.font = NSFont.systemFont(ofSize: 14)
-		view.addSubview(titleLabel)
-		view.addSubview(subtitleLabel)
-		view.addSubview(bodyLabel)
+		gameView.addSubview(titleLabel)
+		gameView.addSubview(subtitleLabel)
+		gameView.addSubview(bodyLabel)
 		titleLabel.frame = CGRect(x: 20, y: 190, width: titleLabel.bounds.width, height: titleLabel.font!.pointSize * 2)
 		subtitleLabel.frame = CGRect(x: 20, y: 165, width: subtitleLabel.bounds.width * 1.5, height: subtitleLabel.font!.pointSize * 2)
 		bodyLabel.frame = CGRect(x: 20, y: 90, width: bodyLabel.bounds.width * 1.5, height: bodyLabel.font!.pointSize * 5)
 	}
 	
+	/// Called when the user has pressed the regenerate button.
 	@objc func regen(_ sender: AnyObject?) {
 		generate()
 	}
 	
+	/// Generates a new world.
 	func generate() {
 		// Remove previously generated world.
 		for nodeToRemove in scene.rootNode.childNodes(passingTest: { node, _ in
@@ -109,13 +125,13 @@ class GameViewController: NSViewController {
 		}
 		
 		// A terrain source.
-		let perlin = PerlinGenerator()
+		let perlin = PerlinNoise()
 		perlin.zoom = 0.5 * Float(terrainSize) / terrainScale
 		perlin.persistence = 0.5
 		perlin.octaves = 4
 		
 		// Create a terrain object.
-		let terrain = Terrain(size: terrainSize, heightPalette: "terrain_colors.png", scale: terrainScale, heightScale: 10)
+		let terrain = Terrain(size: terrainSize, heightPalette: "TerrainPalette.png", scale: terrainScale, heightScale: 10)
 		terrain.setHeightsUsing { i, j in
 			let height = perlin.perlinNoise(x: Float(i), y: Float(j)) * 1.0
 			return height
@@ -155,8 +171,8 @@ class GameViewController: NSViewController {
 		var treePositions = [SCNVector3]()
 		var attempts = 0
 		while treePositions.count < desiredTrees {
-			let x = CGFloat(randomBetween(0, and: Float(terrainSize)*terrainScale - 1))
-			let y = CGFloat(randomBetween(0, and: Float(terrainSize)*terrainScale - 1))
+			let x = CGFloat.random(in: 0...(CGFloat(terrainSize)*CGFloat(terrainScale) - 1))
+			let y = CGFloat.random(in: 0...(CGFloat(terrainSize)*CGFloat(terrainScale) - 1))
 			if terrain.interpolatedHeightAt(x: Float(x), y: Float(y)) > Float(waterHeight) {
 				let candidate = SCNVector3(x: x, y: 0, z: y)
 				var valid = true
@@ -170,9 +186,7 @@ class GameViewController: NSViewController {
 				}
 			}
 			attempts += 1
-			if attempts > desiredTrees * 100 {
-				break
-			}
+			guard attempts <= desiredTrees * 100 else { break }
 		}
 		
 		// Create trees.
@@ -208,8 +222,8 @@ class GameViewController: NSViewController {
 		var grassPositions = [SCNVector3]()
 		var attempts = 0
 		while grassPositions.count < desiredGrassInstances {
-			let x = CGFloat(randomBetween(0, and: Float(terrainSize)*terrainScale - 1))
-			let y = CGFloat(randomBetween(0, and: Float(terrainSize)*terrainScale - 1))
+			let x = CGFloat.random(in: 0...(CGFloat(terrainSize)*CGFloat(terrainScale) - 1))
+			let y = CGFloat.random(in: 0...(CGFloat(terrainSize)*CGFloat(terrainScale) - 1))
 			let lerpHeight = terrain.interpolatedHeightAt(x: Float(x), y: Float(y))
 			if lerpHeight > Float(waterHeight) && lerpHeight < Float(waterHeight) * 1.5 {
 				let candidate = SCNVector3(x: x, y: 0, z: y)
@@ -224,9 +238,7 @@ class GameViewController: NSViewController {
 				}
 			}
 			attempts += 1
-			if attempts > desiredGrassInstances * 100 {
-				break
-			}
+			guard attempts <= desiredGrassInstances * 100 else { break }
 		}
 		
 		// Create grass blades.
