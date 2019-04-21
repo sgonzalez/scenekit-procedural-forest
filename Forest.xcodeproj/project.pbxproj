@@ -13,7 +13,7 @@
 		7E751EE7226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EE6226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift */; };
 		7E751EED226CD8FF009E5A87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EEC226CD8FF009E5A87 /* Utilities.swift */; };
 		7E751EF1226CDD9E009E5A87 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E751EF0226CDD9D009E5A87 /* GameViewController.swift */; };
-		7E94A7342242FE2B00CB6AA2 /* TerrainPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */; };
+		7E751EF3226CE2D2009E5A87 /* TerrainPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E751EF2226CE2D2009E5A87 /* TerrainPalette.png */; };
 		7EAA76381CBB2CE500DFF0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */; };
 		7EAA76401CBB2CE600DFF0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */; };
 		7EAA76431CBB2CE600DFF0D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA76411CBB2CE600DFF0D2 /* MainMenu.xib */; };
@@ -40,7 +40,7 @@
 		7E751EE6226CD879009E5A87 /* SCNVector3+LinearAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+LinearAlgebra.swift"; sourceTree = "<group>"; };
 		7E751EEC226CD8FF009E5A87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7E751EF0226CDD9D009E5A87 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TerrainPalette.png; path = "../../../../Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents/WWDC19 Santiago Gonzalez.playground/Resources/TerrainPalette.png"; sourceTree = "<group>"; };
+		7E751EF2226CE2D2009E5A87 /* TerrainPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TerrainPalette.png; sourceTree = "<group>"; };
 		7EAA76341CBB2CE500DFF0D2 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAA76371CBB2CE500DFF0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 				7E751EEC226CD8FF009E5A87 /* Utilities.swift */,
 				7EAA76751CC2D2BA00DFF0D2 /* Procedural Structures */,
 				7EAA763F1CBB2CE600DFF0D2 /* Assets.xcassets */,
-				7E94A7332242FE2B00CB6AA2 /* TerrainPalette.png */,
+				7E751EF2226CE2D2009E5A87 /* TerrainPalette.png */,
 				7EAA76411CBB2CE600DFF0D2 /* MainMenu.xib */,
 				7EAA76441CBB2CE600DFF0D2 /* Info.plist */,
 			);
@@ -216,7 +216,7 @@
 				7E751EE022694A8A009E5A87 /* README.md in Resources */,
 				7EAA76401CBB2CE600DFF0D2 /* Assets.xcassets in Resources */,
 				7EAA76431CBB2CE600DFF0D2 /* MainMenu.xib in Resources */,
-				7E94A7342242FE2B00CB6AA2 /* TerrainPalette.png in Resources */,
+				7E751EF3226CE2D2009E5A87 /* TerrainPalette.png in Resources */,
 				7E751EDF22694A8A009E5A87 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
